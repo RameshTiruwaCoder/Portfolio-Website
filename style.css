@@ -6,16 +6,12 @@
     box-sizing: border-box;
 }
 
-body {
-    width: 100vw;
-}
-
 header {
     height: 60px;
     width: 98%;
     margin: 10px;
     border-radius: 5px;
-    background-color: rgb(243, 243, 343);
+    background-color: rgb(243, 243, 243);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -60,6 +56,17 @@ header button {
     border-radius: 4px;
     font-size: 1.05rem;
 }
+
+header li > a:hover{ 
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: grey;
+}
+
+header nav > button:hover { 
+    background-color: rgb(247, 23, 23);
+}
+
 
 
 /* Media Query */
