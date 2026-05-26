@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akt:wght@100..900&display=swap');
 
 * {
     margin: 0;
@@ -6,18 +7,22 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(226, 225, 225);
+}
+
 header {
     height: 60px;
     width: 98%;
     margin: 10px;
     border-radius: 5px;
-    background-color: rgb(243, 243, 243);
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-header > .logo p {
+header>.logo p {
     font-size: 31px;
     color: rgb(255, 115, 0);
     font-style: italic;
@@ -25,24 +30,24 @@ header > .logo p {
     font-family: "Roboto", sans-serif;
 }
 
-header > nav {
+header>nav {
     display: flex;
     align-items: center;
     gap: 25px;
     height: 100%;
 }
 
-header nav > ul {
+header nav>ul {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-header > nav li {
+header>nav li {
     list-style: none;
 }
 
-header a { 
+header a {
     color: black;
     text-decoration: none;
 }
@@ -57,36 +62,91 @@ header button {
     font-size: 1.05rem;
 }
 
-header li > a:hover{ 
+header li>a:hover {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-decoration-color: grey;
 }
 
-header nav > button:hover { 
+header nav>button:hover {
     background-color: rgb(247, 23, 23);
 }
 
+.main_sec {
+    height: 450px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 500px;
+}
+
+#first_content {
+    align-self: center;
+    margin-left: 100px;
+}
+
+div.first_container {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    min-height: 80%;
+    gap: 40px;
+}
+
+#first_content>h2 {
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 2.4rem;
+    font-family: "Roboto", sans-serif;
+}
+
+#first_content>p {
+    font-family: "Roboto", sans-serif;
+    text-indent: 30px;
+}
 
 
-/* Media Query */
+.main_image {
+    background-image: url('Ramesh-Photo.jpg');
+    height: 350px;
+    width: 350px;
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center top;
+}
+
+#knowledge {
+    display: flex;
+    margin-top: 30px;
+    gap: 21px;
+}
+
+#knowledge i {
+    font-size: 30px;
+}
+
+#knowledge p {
+    font-family: "Akt", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
 
 @media (max-width: 600px) {
-    header { 
+    header {
         justify-content: space-between;
     }
 }
 
 @media (max-width: 475px) {
-    header .logo > p {
+    header .logo>p {
         font-size: 21px;
     }
 
-    header li > a {
+    header li>a {
         font-size: 0.8rem;
     }
 
-    header button { 
+    header button {
         height: 45%;
         font-size: 0.9rem;
     }
