@@ -104,6 +104,54 @@ div.first_container {
     text-indent: 30px;
 }
 
+.skills_sec {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skills_sec h2 {
+    text-align: center;
+    font-size: 2.1rem;
+}
+
+.skills_sec > .card_cont {
+    display: flex;
+    gap: 30px;
+}
+
+.card {
+    border: 1px solid grey;
+    padding: 3px 40px;
+    border-radius: 5px;
+}
+
+.card i {
+    font-size: 31px;
+}
+
+
+.card p {
+    font-size: 19px;
+}
+
+.card_one  i{
+    color: orangered;
+}
+.card_two  i{
+    color: blue;
+}
+.card_three  i{
+    color: rgb(212, 212, 34);
+}
+.card_four  i{
+    color: green;
+}
+.card_five  i{
+    color: grey;
+}
 
 .main_image {
     background-image: url('Ramesh-Photo.jpg');
