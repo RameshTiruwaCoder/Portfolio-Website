@@ -75,7 +75,7 @@ header nav>button:hover {
 }
 
 /* Hero Section */
-.hero_section {
+#hero_sec {
     height: 75vh;
     display: flex;
     width: 95%;
@@ -86,17 +86,17 @@ header nav>button:hover {
     gap: 40px;
 }
 
-.hero_section img {
+#hero_sec img {
     height: 350px;
     border-radius: 50%;
 }
 
-.hero_section h2 {
+#hero_sec h2 {
     font-size: 36px;
     margin-bottom: 15px;
 }
 
-.hero_section p {
+#hero_sec p {
     text-indent: 25px;
 }
 
@@ -197,7 +197,7 @@ header nav>button:hover {
 
 /* Testimony section */
 
-.testimony {
+#testimony {
     width: 100%;
     display: flex;
     gap: 40px;
@@ -205,17 +205,17 @@ header nav>button:hover {
     margin: 50px auto;
 }
 
-.testimony img {
+#testimony img {
     width: 200px;
     border-radius: 50%;
 }
 
-.testimony h2 {
+#testimony h2 {
     margin-bottom: 10px;
     font-size: 29px;
 }
 
-.testimony p {
+#testimony p {
     text-indent: 35px;
 }
 
@@ -293,13 +293,13 @@ header nav>button:hover {
 }
 
 @media (max-width: 860px) {
-    .hero_section {
+    #hero_sec {
         flex-direction: column-reverse;
         height: auto;
         margin-top: 50px;
     }
 
-    .hero_section h2 {
+    #hero_sec h2 {
         font-size: 32px;
     }
 
@@ -327,7 +327,7 @@ header nav>button:hover {
         width: 80%;
     }
 
-    .testimony {
+    #testimony {
         flex-direction: column;
     }
 
@@ -336,7 +336,7 @@ header nav>button:hover {
 
     }
 
-    .testimony img {
+    #testimony img {
         align-self: center;
     }
 }
@@ -346,7 +346,7 @@ header nav>button:hover {
         width: 100%;
     }
 
-    .hero_section img {
+    #hero_sec img {
         height: 250px;
     }
 }
