@@ -103,9 +103,10 @@ header nav>button:hover {
     display: flex;
     gap: 20px;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
-.navigate a {
+.navi a{ 
     --color: rgb(64, 169, 255);
     text-decoration: none;
     color: var(--color);
@@ -116,13 +117,29 @@ header nav>button:hover {
     transition-duration: .2s;
 }
 
-.navigate a:hover {
+.navi a:hover {
     --color: black;
+}
+
+@media (max-width: 860px) {
+    .hero_section {
+        flex-direction: column-reverse;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .hero_section h2 {
+        font-size: 32px;
+    }
 }
 
 @media (max-width: 600px) {
     header {
         width: 100%;
+    }
+
+    .hero_section img {
+        height: 250px;
     }
 }
 
@@ -139,4 +156,6 @@ header nav>button:hover {
         height: 45%;
         font-size: 0.9rem;
     }
+
+
 }
