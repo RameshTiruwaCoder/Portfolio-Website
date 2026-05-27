@@ -9,6 +9,10 @@
     font-size: 18px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: rgb(226, 225, 225);
 }
@@ -75,7 +79,7 @@ header nav>button:hover {
 }
 
 /* Hero Section */
-.hero_section {
+#hero_section {
     height: 75vh;
     display: flex;
     width: 95%;
@@ -91,12 +95,12 @@ header nav>button:hover {
     border-radius: 50%;
 }
 
-.hero_section h2 {
+#hero_section h2 {
     font-size: 36px;
     margin-bottom: 15px;
 }
 
-.hero_section p {
+#hero_section p {
     text-indent: 25px;
 }
 
@@ -202,7 +206,7 @@ header nav>button:hover {
 
 /* Testimony section */
 
-.testimony {
+#testimony {
     width: 100%;
     display: flex;
     gap: 40px;
@@ -210,17 +214,17 @@ header nav>button:hover {
     margin: 50px auto;
 }
 
-.testimony img {
+#testimony img {
     width: 200px;
     border-radius: 50%;
 }
 
-.testimony h2 {
+#testimony h2 {
     margin-bottom: 10px;
     font-size: 29px;
 }
 
-.testimony p {
+#testimony p {
     text-indent: 35px;
 }
 
@@ -302,14 +306,65 @@ header nav>button:hover {
     margin-top: 20px;
 }
 
+/* Footer Section */
+
+footer {
+    background-color: rgb(182, 180, 180);
+    display: flex;
+    justify-content: space-evenly;
+    color: rgb(61, 61, 61);
+    align-items: center;
+}
+
+footer p {
+    transition: 0.1s;
+}
+
+footer p:hover{
+    color: black
+}
+
+footer li {
+    list-style: none;
+    margin-bottom: 7px;
+}
+
+footer a {
+    transition: 0.3s;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-decoration-thickness: 2px;
+}
+
+footer ul li:first-child a i {
+    font-size: 1.5rem;
+    color: rgb(255, 102, 0);
+    font-weight: 900;
+}
+
+footer li a {
+    text-decoration: none;
+    color: black;
+}
+
+.first_foot {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 10px;
+    align-items: center;
+}
+
 @media (max-width: 860px) {
-    .hero_section {
+    #hero_section {
         flex-direction: column-reverse;
         height: auto;
         margin-top: 50px;
     }
 
-    .hero_section h2 {
+    #hero_section h2 {
         font-size: 32px;
     }
 
@@ -337,7 +392,7 @@ header nav>button:hover {
         width: 80%;
     }
 
-    .testimony {
+    #testimony {
         flex-direction: column;
     }
 
@@ -346,7 +401,7 @@ header nav>button:hover {
 
     }
 
-    .testimony img {
+    #testimony img {
         align-self: center;
     }
 }
@@ -356,7 +411,7 @@ header nav>button:hover {
         width: 100%;
     }
 
-    .hero_section img {
+    #hero_section img {
         height: 250px;
     }
 }
