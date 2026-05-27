@@ -13,13 +13,13 @@ body {
 
 header {
     height: 60px;
-    width: 98%;
-    margin: 10px;
+    width: 80%;
+    margin: 5px auto;
     border-radius: 5px;
     background-color: transparent;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 header>.logo p {
@@ -69,12 +69,12 @@ header li>a:hover {
 }
 
 header nav>button:hover {
-    background-color: rgb(247, 23, 23);
+    background-color: rgb(199, 8, 8);
 }
 
 @media (max-width: 600px) {
     header {
-        justify-content: space-between;
+        width: 100%;
     }
 }
 
