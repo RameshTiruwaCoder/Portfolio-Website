@@ -219,6 +219,78 @@ header nav>button:hover {
     text-indent: 35px;
 }
 
+/* Form Section */
+
+#contact_sec {
+    display: grid;
+    width: 95%;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px auto;
+}
+
+#contact_sec h2 {
+    font-size: 27px;
+    text-align: center;
+}
+
+#contact_sec img {
+    width: 75%;
+    border-radius: 5px;
+    justify-self: center;
+}
+
+#contact_sec p {
+    text-indent: 40px;
+}
+
+#contact_sec label {
+    display: block;
+    margin-top: 25px;
+}
+
+#contact_sec input {
+    border: 1px solid black;    
+    border-radius: 7px;
+}
+
+.cont_sec_two {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact_sec textarea {
+    height: 300px;
+    width: 300px;
+    border-radius: 7px;
+}
+
+#message {
+    height: 200px;
+    width: 300px;
+}
+
+#email {
+    width: 300px;
+}
+
+#first_test {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact_sec button{
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    background-color: skyblue;
+    color: black;
+    font-weight: bolder;
+    border-radius: 10px;
+    margin-top: 20px;
+}
 
 @media (max-width: 860px) {
     .hero_section {
@@ -236,6 +308,36 @@ header nav>button:hover {
     margin: 0px auto;
     display: flex;
     flex-direction: column;
+    }
+
+    #contact_sec {
+    display: grid;
+    width: 95%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 50px auto;
+    }
+
+    .cont_sec_one {
+        width: 95%;
+        margin: auto;
+    }
+
+    .cont_sec_one input, .cont_sec_one textarea {
+        width: 80%;
+    }
+
+    .testimony {
+        flex-direction: column;
+    }
+
+    #first_test {
+        width: 100%;
+
+    }
+
+    .testimony img {
+        align-self: center;
     }
 }
 
