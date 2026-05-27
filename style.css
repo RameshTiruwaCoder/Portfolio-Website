@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    font-size: 18px;
 }
 
 body {
@@ -81,7 +82,7 @@ header nav>button:hover {
     align-items: center;
     justify-content: space-between;
     margin: 0px auto;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     gap: 40px;
 }
 
@@ -121,6 +122,80 @@ header nav>button:hover {
     --color: black;
 }
 
+/* Skills section  */
+
+#skills {
+    width: 75%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#skills > h2{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 29px;
+}
+
+.skills_card {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 25px auto;
+}
+
+.skills_card > div {
+    --border-color: orangered;
+    border: 1px solid var(--border-color);
+    padding: 4px 20px;
+    border-radius: 5px;
+}
+
+.skills_card > div i{
+    color: #E34F26;
+}
+
+#skill_card_two {
+    --border-color: blue;
+}
+
+#skill_card_two i{
+    color: blue;
+}
+
+#skill_card_three {
+    --border-color: rgb(233, 151, 0);
+}
+
+#skill_card_three i{
+    color: rgb(231, 170, 0);
+}
+
+#skill_card_four {
+    --border-color: rgb(97, 80, 80);
+}
+
+#skill_card_four i{
+    color: #777BB4;
+}
+
+#skill_card_five{
+    --border-color: rgb(60, 228, 18);
+}
+
+#skill_card_five i{
+    color: #3776AB;
+}
+
+#skill_card_six{
+    --border-color: rgb(85, 95, 83);
+}
+
+#skill_card_six i{
+    color: blue;
+}
+
+
 @media (max-width: 860px) {
     .hero_section {
         flex-direction: column-reverse;
@@ -130,6 +205,13 @@ header nav>button:hover {
 
     .hero_section h2 {
         font-size: 32px;
+    }
+
+    #skills {
+    width: 95%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
     }
 }
 
