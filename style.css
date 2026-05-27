@@ -195,6 +195,30 @@ header nav>button:hover {
     color: blue;
 }
 
+/* Testimony section */
+
+.testimony {
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    width: 95%;
+    margin: 50px auto;
+}
+
+.testimony img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.testimony h2 {
+    margin-bottom: 10px;
+    font-size: 29px;
+}
+
+.testimony p {
+    text-indent: 35px;
+}
+
 
 @media (max-width: 860px) {
     .hero_section {
